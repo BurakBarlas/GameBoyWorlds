@@ -3,7 +3,7 @@ name = "poke-worlds"
 version = "0.1.0"
 description = "Emulation, state parsing, low-level control and Gym environments for Gen I and Gen II Pokémon games"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = [
     "bidict>=0.23.1",
     "click>=8.3.0",
