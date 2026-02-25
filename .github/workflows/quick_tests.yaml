@@ -33,9 +33,7 @@ jobs:
       - run: which python && pip list
       - run: uv pip install pdoc
       - run: uv pip install -e ".[vlm]"
-      - run: uv pip install vptq
       # ADJUST THIS: build your documentation into docs/.
       # We use a custom build script for pdoc itself, ideally you just run `pdoc -o docs/ ...` here.
       - run: |
-          chmod +x quick_tests.sh
-          . quick_tests.sh
+          uv run bash quick_tests.sh
